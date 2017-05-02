@@ -1,0 +1,13 @@
+{% include '/common/header.twig' %}
+<body>
+	<form method="POST" action="/logged">
+			Име:<input type="text" name="user" /><br>
+			Парола:<input type="password" name="pass"/><br>
+			<input type="submit" name="send" /><br>
+	</form>
+	<div><a href="/gameshop">Go back....</a></div>
+	{{error}}
+	{{user}}
+</body>
+
+{% include '/common/footer.twig' %}

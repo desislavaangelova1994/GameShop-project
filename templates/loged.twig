@@ -1,0 +1,19 @@
+{% include '/common/header.twig' %}
+<body>
+<div class="row">
+  	<div class="col-md-4"></div>
+	  	<div class="row">
+			<div class="col-xs-6">
+				Hello {{user.username}}  <br>
+				<a href=#>My Orders</a><br>
+				<a href="/cart">Shopping cart</a><br>
+				{{output}}
+			</div>
+	    </div>
+    <div class="col-xs-6"></div>
+</div>
+<div class="col-md-4 col-md-offset-4"></div>
+</body>
+	
+
+{% include '/common/footer.twig' %}
